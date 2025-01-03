@@ -1,0 +1,407 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7/"
+     xml:base="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#designedFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#designedFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#evaluatedUsing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#evaluatedUsing">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#hasArchitecture -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#hasArchitecture">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#trainedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#trainedOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#hasAccuracy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#hasAccuracy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#hasParameterCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#hasParameterCount"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#hasPrice"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#hasTrainingDataSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#hasTrainingDataSize"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#hasTrainingTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#hasTrainingTime"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Accuracy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Accuracy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BLEUScore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BLEUScore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BertLike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BertLike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Biomediacal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Biomediacal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#DomainSpecificModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ClassificationAccuracy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ClassificationAccuracy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ConfusionMatrix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ConfusionMatrix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Domain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Domain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#DomainSpecificModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#DomainSpecificModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Domain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Educational -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Educational">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#DomainSpecificModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#F1Score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#F1Score">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Financial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Financial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#DomainSpecificModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FineTunnedModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FineTunnedModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ModelType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FoundationModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FoundationModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ModelType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#GeneralPurposeModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#GeneralPurposeModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Domain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#GptLike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#GptLike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Legal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Legal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#DomainSpecificModel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LogarithmicLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LogarithmicLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ModelType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ModelType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#NeuralNetwork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#NeuralNetwork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Perplexity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Perplexity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#PreTrainedModel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#PreTrainedModel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ModelType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Precision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Precision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ProprietaryDataset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ProprietaryDataset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#TrainingData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#PublicDataset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#PublicDataset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#TrainingData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ROUGEScore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ROUGEScore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Recall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Recall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Sed2Seq -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Sed2Seq">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#SyntheticDataset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#SyntheticDataset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#TrainingData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#TrainingData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#TrainingData"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Transformer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Transformer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#AnthropicsClaude -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#AnthropicsClaude">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Falcon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Falcon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#GooglesBertAndT5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#GooglesBertAndT5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#MetasLlama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#MetasLlama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#OpenAisGptSeries -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#OpenAisGptSeries">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
