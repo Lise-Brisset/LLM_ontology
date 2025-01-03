@@ -370,10 +370,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BioGptForBiomedical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BioGptForBiomedical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Domain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ChatGptForGeneralPurpose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ChatGptForGeneralPurpose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Domain"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Falcon -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Falcon">
         <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FinBertForFinance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FinBertForFinance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Domain"/>
     </owl:NamedIndividual>
     
 
