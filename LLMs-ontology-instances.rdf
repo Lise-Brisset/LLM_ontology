@@ -5,7 +5,8 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-7="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7"/>
     
 
@@ -49,6 +50,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#designedFor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Domain"/>
     </owl:ObjectProperty>
     
 
@@ -58,6 +60,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#evaluatedUsing">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
     </owl:ObjectProperty>
     
 
@@ -67,6 +70,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#hasArchitecture">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
     </owl:ObjectProperty>
     
 
@@ -76,6 +80,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#trainedOn">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#TrainingData"/>
     </owl:ObjectProperty>
     
 
@@ -155,57 +160,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Accuracy -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Accuracy">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BLEUScore -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BLEUScore">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BertLike -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BertLike">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Biomedical -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Biomedical">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#DomainSpecificModel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ClassificationAccuracy -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ClassificationAccuracy">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ConfusionMatrix -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ConfusionMatrix">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
-    </owl:Class>
     
 
 
@@ -223,49 +180,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Educational -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Educational">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#DomainSpecificModel"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#F1Score -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#F1Score">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Financial -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Financial">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#DomainSpecificModel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FineTunedModel -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FineTunedModel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ModelType"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FoundationModel -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FoundationModel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ModelType"/>
-    </owl:Class>
     
 
 
@@ -277,71 +194,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#GptLike -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#GptLike">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
     
 
 
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Legal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Legal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#DomainSpecificModel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LogarithmicLoss -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LogarithmicLoss">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ModelType -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ModelType"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#NeuralNetwork -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#NeuralNetwork">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Perplexity -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Perplexity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#PreTrainedModel -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#PreTrainedModel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ModelType"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Precision -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Precision">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
-    </owl:Class>
     
 
 
@@ -361,30 +222,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ROUGEScore -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ROUGEScore">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Recall -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Recall">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Seq2Seq -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Seq2Seq">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#SyntheticDataset -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#SyntheticDataset">
@@ -399,14 +236,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Transformer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Transformer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -418,11 +247,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Accuracy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Accuracy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#AnthropicsClaude -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#AnthropicsClaude">
         <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Transformer"/>
     </owl:NamedIndividual>
     
 
@@ -431,7 +267,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BART">
         <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Seq2Seq"/>
     </owl:NamedIndividual>
     
 
@@ -440,7 +275,22 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BERT">
         <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#PreTrainedModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BLEUScore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BLEUScore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BertLike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BertLike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
     </owl:NamedIndividual>
     
 
@@ -448,8 +298,8 @@
     <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BioBert -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BioBert">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FineTunedModel"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
+        <untitled-ontology-7:designedFor rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Biomedical"/>
     </owl:NamedIndividual>
     
 
@@ -457,8 +307,15 @@
     <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BioGPT -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BioGPT">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Biomedical"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Biomedical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Biomedical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#DomainSpecificModel"/>
     </owl:NamedIndividual>
     
 
@@ -472,11 +329,50 @@
     
 
 
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ClassificationAccuracy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ClassificationAccuracy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Common -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Common">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#GeneralPurposeModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ConfusionMatrix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ConfusionMatrix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Educational -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Educational">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#DomainSpecificModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#F1Score -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#F1Score">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Falcon -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Falcon">
         <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Transformer"/>
     </owl:NamedIndividual>
     
 
@@ -484,8 +380,31 @@
     <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FinBertForFinance -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FinBertForFinance">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Financial"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Financial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Financial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#DomainSpecificModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FineTunedModel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FineTunedModel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ModelType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FondationModel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FondationModel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ModelType"/>
     </owl:NamedIndividual>
     
 
@@ -494,7 +413,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#GPT4">
         <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#PreTrainedModel"/>
+        <untitled-ontology-7:designedFor rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Common"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#GPTLike -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#GPTLike">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
     </owl:NamedIndividual>
     
 
@@ -502,7 +429,6 @@
     <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#GooglesBertAndT5 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#GooglesBertAndT5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#BertLike"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
     </owl:NamedIndividual>
     
@@ -512,7 +438,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Harvey">
         <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Legal"/>
     </owl:NamedIndividual>
     
 
@@ -520,8 +445,15 @@
     <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Khanmigo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Khanmigo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Educational"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Legal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Legal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#DomainSpecificModel"/>
     </owl:NamedIndividual>
     
 
@@ -535,11 +467,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LogarithmicLoss -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LogarithmicLoss">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#MetasLlama -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#MetasLlama">
         <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Transformer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#NeuralNetwork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#NeuralNetwork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
     </owl:NamedIndividual>
     
 
@@ -547,8 +494,55 @@
     <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#OpenAisGptSeries -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#OpenAisGptSeries">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#GptLike"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Perplexity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Perplexity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#PreTrainedModel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#PreTrainedModel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ModelType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Precision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Precision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ROUGEScore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#ROUGEScore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Recall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Recall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#EvaluationMetrics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Seq2Seq -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Seq2Seq">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
     </owl:NamedIndividual>
     
 
@@ -566,7 +560,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#T5">
         <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#NeuralNetwork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Transformer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Transformer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#Architecture"/>
     </owl:NamedIndividual>
     
 
@@ -583,7 +584,6 @@
     <!-- http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#mt5 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#mt5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#FoundationModel"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ikramjanati/ontologies/2024/11/untitled-ontology-7#LanguageModel"/>
     </owl:NamedIndividual>
 </rdf:RDF>
